@@ -3,19 +3,18 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "FFX SENSIX",
   description: "Ultimate System Tuner",
+  base: '/ffx/', 
   themeConfig: {
-    logo: '/logo.png', // Jika ada
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide' }
+      { text: 'Download', link: 'https://github.com/cyrust-app/ffx/releases' }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/cyrust-app' },
-      { icon: 'youtube', link: 'https://youtube.com' }
+      { icon: 'github', link: 'https://github.com/cyrust-app' }
     ],
     footer: {
       message: 'FFX SENSIX Project',
-      copyright: '© 2026 CyrusT'
+      copyright: 'Copyright © 2026 CyrusT'
     }
   }
 })
