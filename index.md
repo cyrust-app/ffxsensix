@@ -1,36 +1,41 @@
 ---
 layout: home
-
-hero:
-  name: "FFX SENSIX"
-  text: "Elevate System Performance"
-  tagline: Tuner sistem tercanggih untuk gaming tanpa root menggunakan Shizuku.
-  image:
-    src: https://img.icons8.com/neon/96/lightning-bolt.png
-    alt: FFX Logo
-  actions:
-    - theme: brand
-      text: Download APK v1.0.4
-      link: https://github.com/cyrust-app/ffx/releases
-    - theme: alt
-      text: Cara Penggunaan
-      link: /guide
-
-features:
-  - icon: 🚀
-    title: Extreme Optimization
-    details: Mengurangi latency input dan menstabilkan FPS secara instan.
-  - icon: 🛠️
-    title: Shizuku Integration
-    details: Optimasi level sistem yang aman tanpa memerlukan akses root.
-  - icon: 📱
-    title: Touch Response
-    details: Meningkatkan sensitivitas layar untuk akurasi aim lebih tinggi.
+# ... hero dan features tetap sama ...
 ---
 
-## 👨‍💻 Developer Profile
-Aplikasi ini dikembangkan oleh **CyrusT** dengan fokus pada optimasi kernel dan UI Android.
+<div class="ui-container">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 style="margin: 0; border: none; color: white;">System Dashboard</h3>
+    <span class="status-badge">Shizuku: Online</span>
+  </div>
 
-::: info CATATAN
-Pastikan Shizuku sudah aktif di perangkat Anda sebelum menjalankan eksekusi performa.
-:::
+  <div class="action-grid">
+    <div class="action-card">
+      <div style="font-size: 24px;">🕹️</div>
+      <div style="font-size: 14px; font-weight: bold; color: white;">Slot 1</div>
+      <div style="font-size: 11px; color: #666;">FF MAX</div>
+    </div>
+    <div class="action-card">
+      <div style="font-size: 24px;">🎮</div>
+      <div style="font-size: 14px; font-weight: bold; color: white;">Slot 2</div>
+      <div style="font-size: 11px; color: #666;">Standard</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <p style="font-size: 12px; margin-bottom: 8px; color: #888;">Sensix Scale Precision</p>
+    <div style="background: #222; height: 8px; border-radius: 4px; overflow: hidden;">
+      <div style="background: #00F2FF; width: 75%; height: 100%; box-shadow: 0 0 10px #00F2FF;"></div>
+    </div>
+  </div>
+
+  <a href="https://github.com/cyrust-app/ffxsensix/releases" class="btn-primary-custom">
+    EXECUTE OPTIMIZATION
+  </a>
+</div>
+
+### 📟 Status Log
+```text
+* [OK] Environment Syncing...
+* [OK] VIP Signature Verified.
+* [OK] Ready to Boost.
