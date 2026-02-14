@@ -1,18 +1,27 @@
+// .vitepress/config.mjs
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "FFX SENSIX",
-  description: "Ultimate System Tuner",
-  base: '/ffxsensix/',
-  head: [
-    // Ini cara paksa memasukkan CSS ke header
-    ['style', {}, `
-      :root { --vp-c-brand-1: #00F2FF !important; }
-      .ui-container { background: #111; border: 1px solid #222; padding: 20px; border-radius: 15px; }
-      /* ... paste semua CSS dari langkah 1 di sini jika tidak ingin buat file terpisah ... */
-    `]
-  ],
+  title: "Nama Situs Anda",
+  description: "Deskripsi situs",
   themeConfig: {
-    // ... config kamu yang lain
+    // Menu navigasi di atas
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide' }
+    ],
+    // Menu sidebar di samping
+    sidebar: [
+      {
+        text: 'Introduction',
+        items: [
+          { text: 'Apa itu FFX?', link: '/guide' },
+        ]
+      }
+    ],
+    // Link ke GitHub Anda
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/cyrust-app/ffxsensix' }
+    ]
   }
 })
