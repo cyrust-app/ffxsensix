@@ -4,6 +4,7 @@ export default defineConfig({
   title: "FFX SensiX",
   description: "Optimasi Sensivitas FF Tingkat Lanjut",
   base: '/ffxsensix/',
+  ignoreDeadLinks: true,
   lastUpdated: true,
   cleanUrls: true,
 
