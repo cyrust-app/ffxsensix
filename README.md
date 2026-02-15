@@ -5,32 +5,23 @@
 </p>
 
 <p align="center">
-  <strong>Toolkit Optimasi Sensivitas FF Tingkat Lanjut.</strong><br>
-  Dapatkan pengalaman bermain yang lebih halus, presisi, dan bebas delay.
+  <strong>Optimasi Sensivitas FF Tingkat Lanjut</strong><br>
+  Dokumentasi Resmi untuk FFXSensix Toolkit
 </p>
 
 <p align="center">
-  <a href="https://cyrust-app.github.io/ffxsensix/"><strong>Explore Documentation »</strong></a>
-  <br>
-  <br>
-  <a href="#fitur-utama">Fitur Utama</a> •
-  <a href="#instalasi">Instalasi</a> •
-  <a href="#kontribusi">Kontribusi</a>
+  <a href="https://cyrust-app.github.io/ffxsensix/"><strong>Buka Dokumentasi »</strong></a>
 </p>
 
 ---
 
-## ✨ Fitur Utama
+## 🚀 Status Build
+![Deploy Status](https://github.com/cyrust-app/ffxsensix/actions/workflows/deploy.yml/badge.svg)
 
-- 🚀 **High Performance:** Ringan dan dioptimalkan untuk berbagai jenis perangkat.
-- 🎯 **DPI Calculator:** Rekomendasi nilai DPI akurat untuk setiap ukuran layar.
-- 📱 **Responsive Doc:** Dokumentasi lengkap yang mudah diakses di mana saja.
-- 🛠️ **Open Source:** Transparan dan dikembangkan secara aktif oleh komunitas.
+## 📂 Struktur Folder
+- `docs/` - Sumber file Markdown VitePress.
+- `docs/public/` - Aset gambar dan logo.
+- `docs/config/` - Pengaturan teknis DPI dan Sensivitas.
 
-## 🚀 Instalasi Lokal
-
-Jika Anda ingin menjalankan dokumentasi ini di komputer lokal:
-
-1. **Clone repositori:**
-   ```bash
-   git clone [https://github.com/cyrust-app/ffxsensix.git](https://github.com/cyrust-app/ffxsensix.git)
+---
+Dibuat dengan ❤️ oleh [Cyrust App](https://github.com/cyrust-app)
