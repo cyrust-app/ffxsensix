@@ -12,11 +12,18 @@ Pastikan perangkat Anda memiliki ruang penyimpanan minimal 50MB bebas.
 - Koneksi internet stabil
 - Akses pengembang (Developer Options) diaktifkan
 
-## Langkah Instalasi
+# 📖 Panduan Instalasi
 
-1. **Download:** Unduh versi terbaru dari [Releases](https://github.com/cyrust-app/ffxsensix/releases).
-2. **Ekstrak:** Buka file yang telah diunduh.
-3. **Konfigurasi:** Sesuaikan nilai DPI sesuai rekomendasi di bagian [Sensivitas](/config/dpi).
+Ikuti langkah-langkah di bawah ini untuk mengaktifkan modul FFXSensix.
+
+## Langkah-langkah
+1. Pastikan fitur **Opsi Pengembang** sudah aktif di HP kamu.
+2. Buka bagian [Pengaturan DPI](/config/dpi) untuk melihat angka yang cocok.
+3. Terapkan juga [Sensivitas Dasar](/config/basic) di dalam game.
+
+---
+
+*Butuh bantuan lebih lanjut? Bergabunglah di komunitas kami.*
 
 ## Masalah Umum
 
