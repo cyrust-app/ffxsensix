@@ -2,11 +2,11 @@
 layout: home
 
 hero:
-  name: "FFXSensix"
+  name: "FFX SensiX"
   text: "Level Up Your Sensitivity"
   tagline: "Toolkit optimasi sensivitas terbaik untuk pengalaman bermain yang lebih halus dan presisi."
   image:
-    src: https://vitepress.dev/vitepress-logo-large.png
+    src: https://vitepress.dev/logo.png
     alt: FFXSensix Logo
   actions:
     - theme: brand
