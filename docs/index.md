@@ -6,7 +6,7 @@ hero:
   text: "Level Up Your Sensitivity"
   tagline: "Toolkit optimasi sensivitas terbaik untuk pengalaman bermain yang lebih halus dan presisi."
   image:
-    src: https://vitepress.dev/logo.png
+    src: https://cyrust-app.github.io/ffxsensix/docs/public/logo.png
     alt: FFXSensix Logo
   actions:
     - theme: brand
