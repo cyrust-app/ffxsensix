@@ -1,65 +1,70 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "FFXSensix",
+  title: "FFX SensiX",
   description: "Optimasi Sensivitas FF Tingkat Lanjut",
   base: '/ffxsensix/',
   lastUpdated: true,
   cleanUrls: true,
 
   themeConfig: {
-    logo: '/logo.png', // Pastikan simpan logo di docs/public/logo.png
+    logo: '/logo.png', // Pastikan file logo ada di docs/public/logo.png
     
-    // Navigasi Atas
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Panduan', link: '/guide' },
-      { text: 'v1.0.0', items: [
-          { text: 'Changelog', link: 'https://github.com/cyrust-app/ffxsensix/releases' },
+      { text: 'Download', link: '/download' },
+      { 
+        text: 'v1.0.4', 
+        items: [
+          { text: 'Log Perubahan', link: '/download#log-perubahan' },
           { text: 'Kontribusi', link: '/contributing' }
         ] 
       }
     ],
 
-    // Sidebar yang lebih terstruktur
     sidebar: [
       {
-        text: 'Memulai',
+        text: 'Mulai Cepat',
         collapsed: false,
         items: [
-          { text: 'Apa itu FFXSensix?', link: '/' },
+          { text: 'Tentang FFXSensix', link: '/' },
+          { text: 'Pusat Unduhan', link: '/download' },
           { text: 'Instalasi', link: '/guide' },
         ]
       },
       {
-        text: 'Konfigurasi',
+        text: 'Optimalisasi DPI',
         collapsed: false,
         items: [
           { text: 'Sensivitas Dasar', link: '/config/basic' },
-          { text: 'Pengaturan DPI', link: '/config/dpi' },
+          { text: 'Kalkulator DPI', link: '/config/dpi' },
+        ]
+      },
+      {
+        text: 'Komunitas',
+        items: [
+          { text: 'Cara Kontribusi', link: '/contributing' }
         ]
       }
     ],
 
-    // Sosial Media & Repository
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/cyrust-app/ffxsensix' },
-      { icon: 'discord', link: 'https://discord.gg/' }
+      { icon: 'github', link: 'https://github.com/cyrust-app/ffxsensix' }
     ],
 
-    // Footer & Edit Link
     editLink: {
       pattern: 'https://github.com/cyrust-app/ffxsensix/edit/main/docs/:path',
-      text: 'Edit halaman ini di GitHub'
+      text: 'Edit halaman ini'
     },
 
     footer: {
-      message: 'Dirilis di bawah Lisensi MIT.',
-      copyright: 'Copyright © 2024-sekarang Cyrust App'
+      message: 'FFXSensix Official Project',
+      copyright: 'Copyright © 2026 Cyrust App'
     },
 
     search: {
-      provider: 'local' // Menambahkan fitur pencarian lokal
+      provider: 'local'
     }
   }
 })
