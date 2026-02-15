@@ -1,7 +1,7 @@
 # 🎯 FFXSensix
 
 <p align="center">
-  <img src="https://vitepress.dev/vitepress-logo-large.png" width="120" alt="FFXSensix Logo">
+  <img src="docs/public/logo.png" width="150" alt="FFXSensix Logo">
 </p>
 
 <p align="center">
