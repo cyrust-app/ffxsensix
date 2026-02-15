@@ -1,0 +1,12 @@
+{
+  "version": "1.0.4",
+  "versionCode": 4,
+  "changelog": [
+    "Optimasi algoritma DPI untuk layar 120Hz",
+    "Penambahan preset Ultra Precision",
+    "Perbaikan UI pada menu utama"
+  ],
+  "downloadUrl": "https://github.com/cyrust-app/ffxsensix/raw/main/docs/public/app-release.apk",
+  "isForceUpdate": false,
+  "minSdkVersion": 21
+}
