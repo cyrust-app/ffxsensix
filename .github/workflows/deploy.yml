@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Kita hapus baris cache: 'npm' agar tidak error jika package-lock.json belum ada
 
       - name: Install dependencies
         run: npm install
@@ -38,6 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Pastikan folder ini dihasilkan saat build
           path: docs/.vitepress/dist
 
   deploy:
