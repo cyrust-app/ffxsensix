@@ -30,17 +30,20 @@ features:
 
 <div style="text-align: center; margin-top: 80px; margin-bottom: 50px;">
 
-## Antarmuka Aplikasi
-*Tampilan modern yang intuitif dan mudah digunakan bahkan untuk pemula.*
+## Dokumentasi Aplikasi
+*Tampilan antarmuka FFX SensiX yang bersih dan fungsional.*
 
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-  <img src="/ss-dashboard.png" alt="Dashboard" style="width: 250px; border-radius: 12px; border: 2px solid #3eaf7c; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-  <img src="/ss-settings.png" alt="Settings" style="width: 250px; border-radius: 12px; border: 2px solid #3eaf7c; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 30px; justify-items: center;">
+  <img :src="$withBase('/Screenshot1.png')" alt="SS 1" style="border-radius: 8px; border: 1px solid #3eaf7c; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+  <img :src="$withBase('/Screenshot2.png')" alt="SS 2" style="border-radius: 8px; border: 1px solid #3eaf7c; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+  <img :src="$withBase('/Screenshot3.png')" alt="SS 3" style="border-radius: 8px; border: 1px solid #3eaf7c; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+  <img :src="$withBase('/Screenshot4.png')" alt="SS 4" style="border-radius: 8px; border: 1px solid #3eaf7c; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+  <img :src="$withBase('/Screenshot5.png')" alt="SS 5" style="border-radius: 8px; border: 1px solid #3eaf7c; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
 </div>
 
 </div>
 
-<hr style="border: 0; border-top: 1px solid #eaecef; margin: 60px 0;">
+---
 
 <div style="text-align: center; margin-bottom: 40px;">
 
@@ -57,15 +60,15 @@ Dapatkan akses ke fitur eksklusif dan optimasi tingkat lanjut.
 | **Harga** | **Gratis** | **Rp 50.000/Bulan** |
 
 <div style="margin-top: 20px;">
-  <a href="/premium" style="background-color: #3eaf7c; color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">Upgrade ke VIP Sekarang</a>
+  <a href="/premium" style="background-color: #3eaf7c; color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; transition: transform 0.2s;">Daftar VIP Sekarang</a>
 </div>
 
 </div>
 
-<div style="text-align: center; margin-top: 80px; padding: 40px; background: rgba(62, 175, 124, 0.05); border-radius: 15px;">
+<div style="text-align: center; margin-top: 80px; padding: 40px; background: rgba(62, 175, 124, 0.05); border-radius: 15px; border: 1px dashed #3eaf7c;">
 
 ### Mengapa Memilih FFXSensix?
 
-FFXSensix hadir untuk menyelesaikan masalah **input delay** dan **ketidakstabilan kursor** pada pengaturan standar. Kami tidak hanya memberikan angka, tapi kami memberikan solusi kenyamanan bermain melalui riset mendalam terhadap *frame-to-motion* ratio.
+FFXSensix hadir untuk menyelesaikan masalah **input delay** dan **ketidakstabilan kursor** pada pengaturan standar. Kami membantu Anda mencapai presisi maksimal melalui kalkulasi algoritma yang akurat untuk pengalaman gaming yang kompetitif.
 
 </div>
