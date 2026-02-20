@@ -1,62 +1,61 @@
 # 📱 Display Optimizer User Guide
 
-Welcome to the **Display Optimizer** documentation. This tool is designed to provide advanced control over your device's screen density (DPI) and resolution scaling to enhance visual clarity and touch responsiveness.
+Welcome to the Display Optimizer documentation. This tool utilizes a sophisticated Watchdog & Tile architecture to provide high-performance display scaling only when your game is active.
 
 ---
 
-## 🚀 How to Use
+## 🚀 Execution Workflow
 
-Follow these steps to safely optimize your display settings:
+Follow these steps to safely optimize your gaming experience:
 
-### 1. Choose a Tuning Profile
-Select one of the three pre-calibrated presets that best fits your needs:
-* **Standard Tuning**: Enhanced stability for daily multitasking.
-* **Balanced Mode (Recommended)**: The perfect "sweet spot" between high-definition sharpness and touch sensitivity.
-* **Pro Precision**: Elite-tier density for competitive tasks requiring maximum control and ultra-sharp graphics.
+### 1. Configure Your Presets
+Before launching, define your display targets in the configuration dialog:
+* Select Profile: Choose between Standard, Balanced, or Pro Tuning.
+* Tuning DPI: Enter your desired gameplay density (Safe range: 320 - 1200).
+* Reset DPI: Enter your device's stock DPI (Default: 411) for automatic recovery.
 
-### 2. Manual Configuration (Advanced)
-If you require a specific density not covered by the presets:
-1. Locate the **Manual DPI Tuning** input field.
-2. Enter your desired value (Valid range: **400 - 999**).
-3. Ensure the value is correct to prevent UI scaling distortions.
+### 2. Launching the Monitor
+1. Select your target game from the dashboard.
+2. Tap the Start button.
+3. The app will optimize system resources (CPU/GPU) and launch the game.
+4. MonitorService will appear in your notification bar, indicating that the "Watchdog" is tracking the game process (PID).
 
-### 3. Applying Settings
-1. Review your selected profile or manual input.
-2. Tap the **Apply Changes** button.
-3. The configuration will be saved to your profile.
-4. Launch your target application through the **Main Dashboard** for the settings to take effect.
+### 3. Activating via Quick Settings Tile
+To prevent UI glitches during navigation, the resolution does not change automatically upon launch. You are in control:
+1. Pull down your Android Quick Settings panel.
+2. Add and tap the "Display Optimizer" Tile.
+3. The Tile will turn Active (Blue), and the system will instantly apply your wm size and wm density targets.
 
-### 4. Restoring System Defaults
-If you wish to revert to your original screen scaling:
-1. Open the configuration panel and select **Restore System Defaults**.
-2. Verify your **Default DPI Value** in the input field.
-3. Tap **Apply Changes** to return to factory settings.
+### 4. Smart Auto-Restore System
+This tool is built with a "Safety-First" approach:
+* Process Watchdog: Once you close the game, MonitorService detects the missing PID and automatically triggers a reset via ResetReceiver.
+* Manual Restoration: You can revert to stock settings at any time by toggling the Tile OFF or tapping "Restore Display" on the active notification.
 
 ---
 
-## 🛠 Technical Details
+## 🛠 Technical Architecture
 
-| Feature | Description |
+| Component | Function |
 | :--- | :--- |
-| **DPI Range** | 400 - 999 (Software Limited for Safety) |
-| **Scaling Type** | Dynamic Resolution & Density Calibration |
-| **Profiles** | Standard, Balanced, and Pro Precision |
-| **Restore** | Manual and Automatic rollback support |
+| MonitorService | Background watchdog that tracks the Game PID in real-time. |
+| Quick Settings Tile | The master switch for executing wm size and wm density shell commands. |
+| ResetReceiver | The safety net that ensures the system environment is restored upon exit. |
+| Shizuku Engine | Provides high-level shell access for display modification without Root. |
 
 ---
 
 ## ⚠️ Safety Information & Best Practices
 
-* **Avoid Extreme Values**: We strictly recommend staying within the **400-999** range. Values outside this range may make system buttons too small to interact with.
-* **Session Management**: For optimal device health, it is recommended to restore defaults after finishing high-performance tasks or gaming sessions.
-* **Compatibility**: Display behavior may vary depending on your specific device manufacturer and Android version.
+* Shizuku Status: Ensure Shizuku is authorized and running; otherwise, shell commands will fail.
+* Safety Range: We strictly enforce a DPI range of 320 - 1200. Values outside this range may cause SystemUI crashes.
+* Locked Devices: If the Tile is toggled while the device is locked, the system will require PIN/Biometric authentication before applying changes.
 
 ---
 
-## 📜 Compliance
-This tool is intended for display optimization purposes. It does not modify system files permanently and respects Android’s standard scaling protocols.
+## 📜 System Compliance
+This tool uses standard Android scaling protocols via the WindowManager. It does not modify permanent system files. All changes are temporary and fully reversible.
 
 ---
 
-### **Need Help?**
-If you encounter any UI glitches, please use the **Restore System Defaults** option immediately.
+### Need Assistance?
+If your screen remains at a lower resolution after closing the game, simply toggle the Display Optimizer Tile in your notification panel or use the Reset button within the main app.
