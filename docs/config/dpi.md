@@ -1,4 +1,4 @@
-# 🎯 Kalkulasi DPI & Sensivitas
+8# 🎯 Kalkulasi DPI & Sensivitas
 
 Sesuaikan DPI perangkat Anda untuk mendapatkan akurasi tembakan yang maksimal.
 
